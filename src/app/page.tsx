@@ -8,7 +8,7 @@ export default function Home() {
         <div className="container">
           <div className="main">
             <div className="hero-text">
-                <h1 className="main-text">Hi, I am John, &nbsp; Creative Technologist</h1>
+                <h1 className="main-text">Hi, I am John,<br></br>Creative Technologist</h1>
                 <p className="main-para">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <button className="resume-button">Download Resume</button>
             </div>

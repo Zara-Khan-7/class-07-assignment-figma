@@ -8,7 +8,7 @@ interface HeaderProps {
 export default function Header (data:HeaderProps){
     return(
         <div className="header">
-            <div>
+            <div className="nav-parent">
                 <ul className={`${data.font.className} links`}>
                     <li className="link"><Link href={""}>Works</Link></li>
                     <li className="link"><Link href={""}>Blog</Link></li>

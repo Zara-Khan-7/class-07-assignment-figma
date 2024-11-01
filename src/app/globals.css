@@ -43,8 +43,11 @@ a {
 
 .header{
  background-color: #CFA6A61C;
- ; 
+ max-width: 1440px;
+ margin: auto;
+ margin-top: 50px; 
 }
+
 
 .links{
   display: flex;
@@ -69,6 +72,8 @@ a {
   height: 250px;
   justify-content: center;
   gap: 15px;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .icons{
@@ -83,10 +88,13 @@ a {
 
 .hero-section{
   background-color: #CFA6A61C;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .container{
-  max-width: 1030px;
+  max-width: 1440px;
+  max-height: 2453px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -95,7 +103,7 @@ a {
   display: flex;
   height: 500px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .hero-section .hero-text{
@@ -134,6 +142,8 @@ a {
 
 .recent-post{
   background-color: #f4e2e2;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .recent-post .card-heading{
@@ -171,6 +181,7 @@ a {
   justify-content: center;
   flex-direction: column;
   gap: 25px;
+  padding: 100px;
 }
 
 .view-all-button{
@@ -221,6 +232,8 @@ a {
 
 .featured-section{
   background-color: #CFA6A61C;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .featured-section .main{
@@ -229,6 +242,7 @@ a {
   flex-direction: column;
   justify-content: center;
   gap: 50px;
+  padding: 120px;
 }
 
 .featured-section .card-parent{
@@ -243,13 +257,22 @@ a {
   justify-content: space-around;
 }
 
+@media screen and (max-width:1440px){
+  .container{
+    max-width: 1440px;
+  }
+  
+}
+
 
 /* Applied on 0-1024px */
 @media screen and (max-width:1200px){
     .container{
       max-width: 900px;
     }
+    
 }
+
 
 @media screen and (max-width: 992px){
   .container{
