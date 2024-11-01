@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import {Heebo, Inter} from "next/font/google";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const heebo = Heebo({
+  weight: ["400" , "700", "900"],
+  subsets: ["latin"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const inter = Inter({
+  weight: ["400" , "700"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -25,8 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={heebo.className}>
+        <Header font= {inter}/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
